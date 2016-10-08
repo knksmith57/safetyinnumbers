@@ -1,6 +1,6 @@
 
 var port = 8000;
-var serverUrl = "127.0.0.1";
+var serverUrl = "127.0.0.0";
 
 var http = require("http");
 var path = require("path");
@@ -11,8 +11,8 @@ console.log("Starting web server at " + serverUrl + ":" + port);
 http.createServer( function(req, res) {
 
 	var filename = req.url || "index.html";
-	var ext = path.extname(filename); //FILL IN
-	var localPath = __dirname; //FILL IN
+	var ext = path.extname(filename);
+	var localPath = __dirname;
 	var validExtensions = {
 		".html" : "text/html",
 		".js": "application/javascript",
