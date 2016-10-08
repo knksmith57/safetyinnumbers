@@ -103,19 +103,11 @@ require([
 
         var map = new Map("mapDiv",{
             basemap: "gray",
-            center: [-87.65, 41.85],
+            center: [-83.04, 42.33],
             zoom: 12
         });
 
-        var crime = new FeatureLayer("https://services.arcgis.com/V6ZHFr6zdgNZuVG0/arcgis/rest/services/ChicagoCrime/FeatureServer/0",{
-            id: "analysisLayer",
-            name: "Vehicle Theft",
-            outFields: ["ID","Beat","Ward","Year","Month","DOW","TheHour"]
-        });
-        var tracts = new FeatureLayer("https://services.arcgis.com/V6ZHFr6zdgNZuVG0/arcgis/rest/services/ChicagoCrime/FeatureServer/1",{
-            name: "Tracts"
-        });
-        map.addLayers([crime,tracts]);
+
 
         //Add the legend widget. We'll use this to display the analysis results
         var legend = new Legend({
