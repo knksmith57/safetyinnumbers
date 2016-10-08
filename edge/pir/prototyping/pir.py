@@ -1,6 +1,6 @@
 import mraa
 
-def video_routine:
+def video_routine():
     print 'motion detected!'
 
 pir = mraa.Gpio(8)
