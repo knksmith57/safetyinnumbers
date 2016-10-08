@@ -15,7 +15,7 @@ hog = cv2.HOGDescriptor()
 hog.setSVMDetector( cv2.HOGDescriptor_getDefaultPeopleDetector() )
 
 triggerOn = True
-VISUAL = 0
+VISUAL = 1
 personCount = 0
 
 while( cap.isOpened() and triggerOn ):
