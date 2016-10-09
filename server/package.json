@@ -1,0 +1,23 @@
+{
+  "name": "safetyinnumbers",
+  "author": "Loren Heubert-Aubry <lorenha@umich.edu>",
+  "version": "0.0.0",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "danbudanov/safetyinnumbers"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": "^4.2"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "express": "^4.14.0",
+    "firebase": "^3.4.1",
+    "http": "0.0.0",
+    "mqtt": "^2.0.1"
+  }
+}
